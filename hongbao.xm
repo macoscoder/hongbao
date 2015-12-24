@@ -77,3 +77,30 @@
 }
 
 %end
+
+%hook JailBreakHelper
+
+- (_Bool)IsJailBreak
+{
+	return NO;
+}
+
+%end
+
+%hook MMUploadDataViewController
+
+- (_Bool)isJailbreak
+{
+	return NO;
+}
+
+%end
+
+%hook MMUploadFileViewController
+
+- (_Bool)isJailbreak
+{
+	return NO;
+}
+
+%end
